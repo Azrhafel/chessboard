@@ -1,0 +1,194 @@
+body {
+  background-image: url("https://wallpaperaccess.com/full/3461470.jpg");
+  width: 100%;
+}
+
+#mainbox {
+  width: 90%;
+  background-color: rgba(7, 7, 7, 0.7);
+  margin-left: 50px;
+}
+
+.container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.items1 {
+  padding: 20px;
+  text-align: center;
+  width: 100px;
+  height: 65px;
+  border: solid;
+  border-color: black;
+  font-size: 50px;
+}
+
+.items1:nth-child(even) {
+  background-color: green;
+}
+
+.items1:nth-child(odd) {
+  background-color: white;
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.items2 {
+  padding: 20px;
+  text-align: center;
+  width: 100px;
+  height: 65px;
+  border: solid;
+  border-color: black;
+  font-size: 50px;
+}
+
+.items2:nth-child(even) {
+  background-color: white;
+}
+
+.items2:nth-child(odd) {
+  background-color: green;
+}
+
+.container3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.items3 {
+  padding: 20px;
+  width: 100px;
+  height: 65px;
+  border: solid;
+  border-color: black;
+}
+
+.items3:nth-child(even) {
+  background-color: green;
+}
+
+.items3:nth-child(odd) {
+  background-color: white;
+}
+
+.container4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.items4 {
+  padding: 20px;
+  width: 100px;
+  height: 65px;
+  border: solid;
+  border-color: black;
+}
+
+.items4:nth-child(even) {
+  background-color: white;
+}
+
+.items4:nth-child(odd) {
+  background-color: green;
+}
+
+.container5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.items5 {
+  padding: 20px;
+  width: 100px;
+  height: 65px;
+  border: solid;
+  border-color: black;
+}
+
+.items5:nth-child(even) {
+  background-color: green;
+}
+
+.items5:nth-child(odd) {
+  background-color: white;
+}
+
+.container6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.items6 {
+  padding: 20px;
+  width: 100px;
+  height: 65px;
+  border: solid;
+  border-color: black;
+}
+
+.items6:nth-child(even) {
+  background-color: white;
+}
+
+.items6:nth-child(odd) {
+  background-color: green;
+}
+
+.container7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.items7 {
+  padding: 20px;
+  text-align: center;
+  width: 100px;
+  height: 65px;
+  border: solid;
+  border-color: black;
+  font-size: 50px;
+}
+
+.items7:nth-child(even) {
+  background-color: green;
+}
+
+.items7:nth-child(odd) {
+  background-color: white;
+}
+
+.container8 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.items8 {
+  padding: 20px;
+  text-align: center;
+  width: 100px;
+  height: 65px;
+  border: solid;
+  border-color: black;
+  font-size: 50px;
+}
+
+.items8:nth-child(even) {
+  background-color: white;
+}
+
+.items8:nth-child(odd) {
+  background-color: green;
+}
