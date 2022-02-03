@@ -1,44 +1,74 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  height: 100%;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   background-image: url("https://previews.123rf.com/images/titco/titco2004/titco200400024/144919598-wood-background-abstract-wooden-texture.jpg");
-  padding-top: 50px;
-
 }
 
 .mainboard {
-  border: 1px solid;
-  height: 480px;
-  width: 480px;
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+
   display: flex;
   flex-wrap: wrap;
+  border: 1px solid;
+
+  /*Add height and width here so the responsiveness of the board adjusts to the screen size properly*/
+  height: 100vw;
+  width: 100vw;
+  max-width: 480px;
+  max-height: 480px;
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.65);
+  justify-content: center;
+  align-items: center;
 }
 
 .white {
-  height: 60px;
-  width: 60px;
+  /*Since there are 8 columns and rows you need to make sure that each box has enough height and width, when multiplied by 8 will result in 100%*/
+  height: 12.5%;
+  width: 12.5%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 45px;
+  font-size: 8vw;
   background-color: white;
+  line-height: 12vw;
 }
 
 .green {
-  height: 60px;
-  width: 60px;
+  height: 12.5%;
+  width: 12.5%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 45px;
+  font-size: 8vw;
   background-color: green;
+  line-height: 12vw;
+}
+
+
+/*Add @media screen to set rules for viewing on devices that are within the arguements presented*/
+@media screen and (min-width: 480px) {
+  .mainboard {
+    border: 18px solid transparent;
+    box-shadow: 0 15px 15px -5px rgba(0, 0, 0, 0.75);
+  }
+  .green {
+    font-size: 2.5rem;
+    line-height: 56px;
+  }
+}
+.white {
+  font-size: 2.5rem;
+  line-height: 56px;
 }
