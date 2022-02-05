@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 11.25vh);
+  grid-template-rows: repeat(8, 11.25vh);
+  text-align: center;
+  align-self: center;
+  align-content: center;
+  justify-self: center;
+  justify-content: center;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #212121;
+}
+body .grid {
+  margin: auto;
+  padding-top: 100px;
+  box-sizing: border-box;
+  border-width: 100px;
+  height: 90vh;
+  width: 90vh;
+  max-width: 480px;
+  max-height: 480px;
+  min-width: 300px;
+  min-height: 300px;
+}
+body .grid__item {
+  content: attr(div);
+  background-color: #eeedd3;
+  display: block;
+  text-align: center;
+  align-self: center;
+  justify-content: center;
+  padding-top: 10px;
+  height: 11.25vh;
+  width: 11.25vh;
+  font-size: 5vh;
+}
+body .grid__item:nth-of-type(-2n + 8), body .grid__item:nth-of-type(8) ~ *:nth-of-type(-2n + 15), body .grid__item:nth-of-type(16) ~ *:nth-of-type(-2n + 24), body .grid__item:nth-of-type(24) ~ *:nth-of-type(-2n + 31), body .grid__item:nth-of-type(32) ~ *:nth-of-type(-2n + 40), body .grid__item:nth-of-type(40) ~ *:nth-of-type(-2n + 47), body .grid__item:nth-of-type(48) ~ *:nth-of-type(-2n + 56), body .grid__item:nth-of-type(56) ~ *:nth-of-type(-2n + 63) {
+  background-color: #779558;
+}
+
+/*# sourceMappingURL=input.css.map */
