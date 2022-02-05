@@ -61,11 +61,11 @@ body .grid__item:nth-of-type(-2n + 8), body .grid__item:nth-of-type(8) ~ *:nth-o
 @keyframes fmove {
   0% {
     background-color: transparent;
-    top: 1px;
+    top: 1vh;
   }
   100% {
     background-color: transparent;
-    top: 140px;
+    top: 23vh;
   }
 }
 #pawn2 {
@@ -79,11 +79,11 @@ body .grid__item:nth-of-type(-2n + 8), body .grid__item:nth-of-type(8) ~ *:nth-o
 @keyframes secmove {
   0% {
     background-color: transparent;
-    bottom: 1px;
+    bottom: 1vh;
   }
   100% {
     background-color: transparent;
-    bottom: 140px;
+    bottom: 23vh;
   }
 }
 #rook1 {
@@ -97,11 +97,11 @@ body .grid__item:nth-of-type(-2n + 8), body .grid__item:nth-of-type(8) ~ *:nth-o
 @keyframes thrmove {
   0% {
     background-color: transparent;
-    top: 1px;
+    top: 1vh;
   }
   100% {
     background-color: transparent;
-    top: 140px;
+    top: 23vh;
   }
 }
 #knight1 {
@@ -115,21 +115,21 @@ body .grid__item:nth-of-type(-2n + 8), body .grid__item:nth-of-type(8) ~ *:nth-o
 @keyframes fthmove {
   0% {
     background-color: transparent;
-    bottom: 1px;
+    bottom: 1vh;
   }
   50% {
     background-color: transparent;
-    bottom: 140px;
+    bottom: 23vh;
   }
   75% {
     background-color: transparent;
-    bottom: 140px;
-    right: 1px;
+    bottom: 23vh;
+    right: 0vh;
   }
   100% {
     background-color: transparent;
-    bottom: 140px;
-    right: 70px;
+    bottom: 23vh;
+    right: 12vh;
   }
 }
 #pawn3 {
@@ -143,11 +143,11 @@ body .grid__item:nth-of-type(-2n + 8), body .grid__item:nth-of-type(8) ~ *:nth-o
 @keyframes ffthmove {
   0% {
     background-color: transparent;
-    top: 1px;
+    top: 1vh;
   }
   100% {
     background-color: transparent;
-    top: 70px;
+    top: 12.5vh;
   }
 }
 #pawn4 {
@@ -161,11 +161,11 @@ body .grid__item:nth-of-type(-2n + 8), body .grid__item:nth-of-type(8) ~ *:nth-o
 @keyframes sxthmove {
   0% {
     background-color: transparent;
-    bottom: 1px;
+    bottom: 1vh;
   }
   100% {
     background-color: transparent;
-    bottom: 140px;
+    bottom: 23vh;
   }
 }
 #bish1 {
@@ -179,13 +179,13 @@ body .grid__item:nth-of-type(-2n + 8), body .grid__item:nth-of-type(8) ~ *:nth-o
 @keyframes svnthmove {
   0% {
     background-color: transparent;
-    top: 1px;
-    right: 1px;
+    top: 0vh;
+    right: 0vh;
   }
   100% {
     background-color: transparent;
-    top: 205px;
-    right: 205px;
+    top: 34vh;
+    right: 34vh;
   }
 }
 #pawneat {
@@ -199,18 +199,18 @@ body .grid__item:nth-of-type(-2n + 8), body .grid__item:nth-of-type(8) ~ *:nth-o
 @keyframes eithmove {
   0% {
     background-color: transparent;
-    bottom: 1px;
-    left: 1px;
+    bottom: 0vh;
+    left: 0vh;
   }
   50% {
     background-color: transparent;
-    bottom: 65px;
-    left: 68px;
+    bottom: 10vh;
+    left: 11vh;
   }
   100% {
     background-color: #eeedd3;
-    bottom: 65px;
-    left: 68px;
+    bottom: 10vh;
+    left: 11.2vh;
   }
 }
 

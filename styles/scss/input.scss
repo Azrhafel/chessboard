@@ -62,12 +62,12 @@ body {
 @keyframes fmove {
   0% {
     background-color: transparent;
-    top: 1px;
+    top: 1vh;
   }
 
   100% {
     background-color: transparent;
-    top: 140px;
+    top: 23vh;
   }
 }
 
@@ -82,11 +82,11 @@ body {
 @keyframes secmove {
   0% {
     background-color: transparent;
-    bottom: 1px;
+    bottom: 1vh;
   }
   100% {
     background-color: transparent;
-    bottom: 140px;
+    bottom: 23vh;
   }
 }
 
@@ -101,11 +101,11 @@ body {
 @keyframes thrmove {
   0% {
     background-color: transparent;
-    top: 1px;
+    top: 1vh;
   }
   100% {
     background-color: transparent;
-    top: 140px;
+    top: 23vh;
   }
 }
 
@@ -120,21 +120,21 @@ body {
 @keyframes fthmove {
   0% {
     background-color: transparent;
-    bottom: 1px;
+    bottom: 1vh;
   }
   50% {
     background-color: transparent;
-    bottom: 140px;
+    bottom: 23vh;
   }
   75% {
     background-color: transparent;
-    bottom: 140px;
-    right: 1px;
+    bottom: 23vh;
+    right: 0vh;
   }
   100% {
     background-color: transparent;
-    bottom: 140px;
-    right: 70px;
+    bottom: 23vh;
+    right: 12vh;
   }
 }
 
@@ -149,11 +149,11 @@ body {
 @keyframes ffthmove {
   0% {
     background-color: transparent;
-    top: 1px;
+    top: 1vh;
   }
   100% {
     background-color: transparent;
-    top: 70px;
+    top: 12.5vh;
   }
 }
 
@@ -168,11 +168,11 @@ body {
 @keyframes sxthmove {
   0% {
     background-color: transparent;
-    bottom: 1px;
+    bottom: 1vh;
   }
   100% {
     background-color: transparent;
-    bottom: 140px;
+    bottom: 23vh;
   }
 }
 
@@ -187,13 +187,13 @@ body {
 @keyframes svnthmove {
   0% {
     background-color: transparent;
-    top: 1px;
-    right: 1px;
+    top: 0vh;
+    right: 0vh;
   }
   100% {
     background-color: transparent;
-    top: 205px;
-    right: 205px;
+    top: 34vh;
+    right: 34vh;
   }
 }
 
@@ -208,17 +208,17 @@ body {
 @keyframes eithmove {
   0% {
     background-color: transparent;
-    bottom: 1px;
-    left: 1px;
+    bottom: 0vh;
+    left: 0vh;
   }
   50% {
     background-color: transparent;
-    bottom: 65px;
-    left: 68px;
+    bottom: 10vh;
+    left: 11vh;
   }
   100% {
     background-color: $cream;
-    bottom: 65px;
-    left: 68px;
+    bottom: 10vh;
+    left: 11.2vh;
   }
 }
