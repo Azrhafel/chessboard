@@ -17,11 +17,15 @@
 body {
   padding: 0;
   margin: 0;
+  height: 100vh;
+  width: 100vw;
   background-color: #212121;
 }
 body .grid {
   margin: auto;
   /* Adds margin on all sides, also helps board to go in the middle */
+  height: 100vh;
+  width: 100vw;
   padding-top: 100px;
   /*Adds padding to top of board so entire board appears on screen*/
   max-width: 480px;
