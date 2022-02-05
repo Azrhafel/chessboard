@@ -10,7 +10,6 @@
   grid-template-rows: repeat(8, 11.25vh);
   align-content: center; /*Centers the board to the middle of the site*/
   justify-self: center; /*Centers the board to the middle of the site*/
-
 }
 
 $green: #779558;
@@ -33,11 +32,11 @@ body {
 
     &__item {
       content: attr(div); /*Adds the content of the div to the box*/
-      background-color: $cream;/*Adds background color to cell*/
+      background-color: $cream; /*Adds background color to cell*/
       display: block;
-      text-align: center;/*Centers the text on the cell*/
+      text-align: center; /*Centers the text on the cell*/
       padding-top: 10px; /*Helps center the text on the cell*/
-      font-size: 5vh;/*Font size of the text in the cell*/
+      font-size: 5vh; /*Font size of the text in the cell*/
 
       &:nth-of-type(-2n + 8),
       &:nth-of-type(8) ~ *:nth-of-type(-2n + 15),
@@ -50,5 +49,176 @@ body {
         background-color: $green;
       }
     }
+  }
+}
+
+#pawn1 {
+  position: relative; /*Allows keyframe movements*/
+  animation-name: fmove;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fmove {
+  0% {
+    background-color: transparent;
+    top: 1px;
+  }
+
+  100% {
+    background-color: transparent;
+    top: 140px;
+  }
+}
+
+#pawn2 {
+  position: relative;
+  animation-name: secmove;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-delay: 5s;
+}
+
+@keyframes secmove {
+  0% {
+    background-color: transparent;
+    bottom: 1px;
+  }
+  100% {
+    background-color: transparent;
+    bottom: 140px;
+  }
+}
+
+#rook1 {
+  position: relative;
+  animation-name: thrmove;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-delay: 10s;
+}
+
+@keyframes thrmove {
+  0% {
+    background-color: transparent;
+    top: 1px;
+  }
+  100% {
+    background-color: transparent;
+    top: 140px;
+  }
+}
+
+#knight1 {
+  position: relative;
+  animation-name: fthmove;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-delay: 15s;
+}
+
+@keyframes fthmove {
+  0% {
+    background-color: transparent;
+    bottom: 1px;
+  }
+  50% {
+    background-color: transparent;
+    bottom: 140px;
+  }
+  75% {
+    background-color: transparent;
+    bottom: 140px;
+    right: 1px;
+  }
+  100% {
+    background-color: transparent;
+    bottom: 140px;
+    right: 70px;
+  }
+}
+
+#pawn3 {
+  position: relative;
+  animation-name: ffthmove;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-delay: 20s;
+}
+
+@keyframes ffthmove {
+  0% {
+    background-color: transparent;
+    top: 1px;
+  }
+  100% {
+    background-color: transparent;
+    top: 70px;
+  }
+}
+
+#pawn4 {
+  position: relative;
+  animation-name: sxthmove;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-delay: 25s;
+}
+
+@keyframes sxthmove {
+  0% {
+    background-color: transparent;
+    bottom: 1px;
+  }
+  100% {
+    background-color: transparent;
+    bottom: 140px;
+  }
+}
+
+#bish1 {
+  position: relative;
+  animation-name: svnthmove;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-delay: 30s;
+}
+
+@keyframes svnthmove {
+  0% {
+    background-color: transparent;
+    top: 1px;
+    right: 1px;
+  }
+  100% {
+    background-color: transparent;
+    top: 205px;
+    right: 205px;
+  }
+}
+
+#pawneat {
+  position: relative;
+  animation-name: eithmove;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-delay: 35s;
+}
+
+@keyframes eithmove {
+  0% {
+    background-color: transparent;
+    bottom: 1px;
+    left: 1px;
+  }
+  50% {
+    background-color: transparent;
+    bottom: 65px;
+    left: 68px;
+  }
+  100% {
+    background-color: $cream;
+    bottom: 65px;
+    left: 68px;
   }
 }
