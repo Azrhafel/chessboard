@@ -8,11 +8,8 @@
   display: grid;
   grid-template-columns: repeat(8, 11.25vh);
   grid-template-rows: repeat(8, 11.25vh);
-  text-align: center;
-  align-self: center;
-  align-content: center;
-  justify-self: center;
-  justify-content: center;
+  align-content: center; /*Centers the board to the middle of the site*/
+  justify-self: center; /*Centers the board to the middle of the site*/
 
 }
 
@@ -27,28 +24,20 @@ body {
   background-color: #212121;
 
   .grid {
-    margin: auto;
-    padding-top: 100px;
-    box-sizing: border-box;
-    border-width: 100px;
-    height: 90vh;
-    width: 90vh;
-    max-width: 480px;
-    max-height: 480px;
-    min-width: 300px;
-    min-height: 300px;
+    margin: auto; /* Adds margin on all sides, also helps board to go in the middle */
+    padding-top: 100px; /*Adds padding to top of board so entire board appears on screen*/
+    max-width: 480px; /*Shows the maximum width of the board no matter what screen size*/
+    max-height: 480px; /*Shows the maximum height of the board no matter what screen size*/
+    min-width: 300px; /*Shows the minumum height of the board no matter what screen size*/
+    min-height: 300px; /*Shows the minumum height of the board no matter what screen size*/
 
     &__item {
-      content: attr(div);
-      background-color: $cream;
+      content: attr(div); /*Adds the content of the div to the box*/
+      background-color: $cream;/*Adds background color to cell*/
       display: block;
-      text-align: center;
-      align-self: center;
-      justify-content: center;
-      padding-top: 10px;
-      height: 11.25vh;
-      width: 11.25vh;
-      font-size: 5vh;
+      text-align: center;/*Centers the text on the cell*/
+      padding-top: 10px; /*Helps center the text on the cell*/
+      font-size: 5vh;/*Font size of the text in the cell*/
 
       &:nth-of-type(-2n + 8),
       &:nth-of-type(8) ~ *:nth-of-type(-2n + 15),

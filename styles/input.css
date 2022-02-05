@@ -8,11 +8,10 @@
   display: grid;
   grid-template-columns: repeat(8, 11.25vh);
   grid-template-rows: repeat(8, 11.25vh);
-  text-align: center;
-  align-self: center;
   align-content: center;
+  /*Centers the board to the middle of the site*/
   justify-self: center;
-  justify-content: center;
+  /*Centers the board to the middle of the site*/
 }
 
 body {
@@ -22,27 +21,30 @@ body {
 }
 body .grid {
   margin: auto;
+  /* Adds margin on all sides, also helps board to go in the middle */
   padding-top: 100px;
-  box-sizing: border-box;
-  border-width: 100px;
-  height: 90vh;
-  width: 90vh;
+  /*Adds padding to top of board so entire board appears on screen*/
   max-width: 480px;
+  /*Shows the maximum width of the board no matter what screen size*/
   max-height: 480px;
+  /*Shows the maximum height of the board no matter what screen size*/
   min-width: 300px;
+  /*Shows the minumum height of the board no matter what screen size*/
   min-height: 300px;
+  /*Shows the minumum height of the board no matter what screen size*/
 }
 body .grid__item {
   content: attr(div);
+  /*Adds the content of the div to the box*/
   background-color: #eeedd3;
+  /*Adds background color to cell*/
   display: block;
   text-align: center;
-  align-self: center;
-  justify-content: center;
+  /*Centers the text on the cell*/
   padding-top: 10px;
-  height: 11.25vh;
-  width: 11.25vh;
+  /*Helps center the text on the cell*/
   font-size: 5vh;
+  /*Font size of the text in the cell*/
 }
 body .grid__item:nth-of-type(-2n + 8), body .grid__item:nth-of-type(8) ~ *:nth-of-type(-2n + 15), body .grid__item:nth-of-type(16) ~ *:nth-of-type(-2n + 24), body .grid__item:nth-of-type(24) ~ *:nth-of-type(-2n + 31), body .grid__item:nth-of-type(32) ~ *:nth-of-type(-2n + 40), body .grid__item:nth-of-type(40) ~ *:nth-of-type(-2n + 47), body .grid__item:nth-of-type(48) ~ *:nth-of-type(-2n + 56), body .grid__item:nth-of-type(56) ~ *:nth-of-type(-2n + 63) {
   background-color: #779558;
